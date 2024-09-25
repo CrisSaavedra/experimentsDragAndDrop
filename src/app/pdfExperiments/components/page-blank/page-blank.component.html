@@ -1,0 +1,11 @@
+<section class="flex w-full app 2">
+    <section class="w-[170mm] bg-gray-50 h-[215mm] m-3 flex justify-end items-end">
+        <div class="">
+            <h3 #pdf class="bg-red-100 " style="margin-bottom: 0; margin-top: 0;">PDF</h3>
+        </div>
+    </section>
+     @if (urlPdf) { 
+        <embed [src]="urlPdf |safe" type="application/pdf" controls="controls"
+        class="w-[170mm] h-[215mm] m-3"> 
+    } 
+</section>
